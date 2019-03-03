@@ -23,7 +23,7 @@ const tooltipEmail = (
 
 const tooltipFB = (
 <Tooltip className={cssClasses.contact__tooltip} id="tooltip">
-    <strong>Check my</strong> Facebook profile.
+    <strong>Check my</strong> Github repositories.
 </Tooltip>
 );
 
@@ -41,7 +41,7 @@ const Contact = () => {
     
                 <div className={cssClasses.contact__icon_wrapper}>
                     <OverlayTrigger placement="bottom" overlay={tooltipPhone}> 
-                        <a href="tel:+37064024299" ><PhoneIcon width={80} className={cssClasses.contact__icon}/></a>
+                        <a href="tel:+37060588602" ><PhoneIcon width={80} className={cssClasses.contact__icon}/></a>
                     </OverlayTrigger>
                 </div>
 
@@ -53,13 +53,13 @@ const Contact = () => {
 
                 <div className={cssClasses.contact__icon_wrapper}>
                     <OverlayTrigger placement="bottom" overlay={tooltipFB}> 
-                        <a href="https://www.facebook.com/laurynas.zil" target="_blank" rel="noopener noreferrer"><FbIcon width={80} className={cssClasses.contact__icon}/></a>
+                        <a href="https://github.com/zlink87" target="_blank" rel="noopener noreferrer"><FbIcon width={80} className={cssClasses.contact__icon}/></a>
                     </OverlayTrigger>
                 </div>
 
                 <div className={cssClasses.contact__icon_wrapper}>
                     <OverlayTrigger placement="bottom" overlay={tooltipLin}> 
-                        <a href="https://www.linkedin.com/in/lzgraphicdesign/" target="_blank" rel="noopener noreferrer"><LinkedInIcon width={80} className={cssClasses.contact__icon}/></a>
+                        <a href="https://www.linkedin.com/in/zlink87/" target="_blank" rel="noopener noreferrer"><LinkedInIcon width={80} className={cssClasses.contact__icon}/></a>
                     </OverlayTrigger>
                 </div>
             </div>

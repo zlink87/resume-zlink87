@@ -154,7 +154,7 @@
 .timeline_row {
     display: flex;
     flex-direction: row ;
-    height: 250px;
+    height: 400px;
     margin: 0;
 
     @include respond(tab-port) {

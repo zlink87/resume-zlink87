@@ -14,7 +14,6 @@ import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
-// import Motivation from './Pages/Motivation';
 
 import SinglePortfolio from './Pages/Portfolio_single';
 
@@ -48,11 +47,54 @@ class Resume extends Component {
       {url: require('../assets/img/Portfolio/_Thumb/tedxkaunas_website_2017_thumb.jpg'), name: 'TEDxKaunas Event 2017 Website Thumnail', uqid: 10, tag:"#tdx2017_thumb", id:uuid.v4(null)}
     ],
     experience: [
-      {role:"Owner", company:"TrainedPixels | Creative Agency", description:"Website and e-commerce sites creation using Wordpress, Prestashop, Woocommerce CMS. Graphic design services (logos, press, banners), communication with customers. Languages: HTML, CSS (Bootstrap), JS (jQuery, ReactJS).", time:"March 2017 - Present", isUpper: true, key: uuid.v4(null)},
-      {role:"Senior Graphic Designer", company:'UAB "Macmanus" | Apple Developer', description:"Working for Apple Developer who is oriented in template development for Apple products I learned work fast without loosing quality. A lot of attention was focused to pixel-perfect work and other small details as user experience pieces.", time:"December 2013 - March 2016", isUpper: true, key: uuid.v4(null)},
-      {role:"Instructor", company:"ITMC | IT Training Center", description:"Working with 8-20 people groups from teenagers to seniors. Teaching Photoshop techniques, basic understandig of the web, web design and internet marketing.", time:"Occasionally", isUpper: true, key: uuid.v4(null)},
-      {role:"Graphic Designer", company:"Vilnius University | Kaunas Faculty", description:"Working with students, graphic design, internet marketing - responsible for image building of Kaunas Faculty of Humanities. A lot of multi-tasking assignments, learned a lot about collaborating, working in team, event management, graphic design and e-marketing.", time:"November 2011 - December 2013", isUpper: false, key: uuid.v4(null)},
-      {role:"Sales and Marketing Manager", company:'UAB "Amziaus Pasaka" | Entertainment, Event Center', description:"Banquet hall “Nautilus” and Night Club “BlackPearl” advertisement design, new customer search, liaison with existing customers, theater troups and bands search, events management.", time:"June 2010 - August 2011", isUpper: false, key: uuid.v4(null)}
+      {role:"Front-end Developer / Designer", 
+        company:"Aardvark", 
+        description:"My role is to write and style the front-end components that meet the requirements of our mocks. I also do UI re-designs and other graphic design tasks.", 
+        technologies: "Technologies used: - Angular, Vue, React, Vuex, JavaScript, ES6, TypeScript, SASS, git, eslint, tslint.",
+        software: "Software used: - Adobe Suite, Autodesk Maya, VS Code, Source Tree.",
+        time:"December 2018 - Present", 
+        isUpper: true, 
+        key: uuid.v4(null)},
+      {role:"Owner", 
+        company:"TrainedPixels", 
+        description:"My role as owner was to find and maintain customers. Manage graphic design and web development projects. Write and style front end components.",
+        technologies: "Technologies used: - HTML, CSS, SASS, JavaScript, React, jQuery. CMS used: - Wordpress, Prestashop",
+        software: "Software used: - Adobe Suite (mostly Photoshop, Illustrator, InDesign, XD), Autodesk Maya, VS Code, Unity3D. Skills used: - Project and time management, Graphic design, Front end web development.",
+        time:"April 2016 - December 2018", 
+        isUpper: false, 
+        key: uuid.v4(null)},
+      {role:"Senior Graphic Designer", 
+        company:'UAB "Macmanus" | Apple Developer', 
+        description:"Working for Apple Developer who is oriented in template development for Apple products. I learned to work fast and without loosing quality. A lot of attention was focused to pixel-perfect design work. Managed and delivered few of my own projects.",
+        technologies: "Technologies used: - HTML, CSS, C#.",
+        software: "Software: - Unity3D, Autodesk Maya, iWork, Xcode, Adobe Suite. Skills: - Print and Web design, Game design, UI/UX, Project management.",
+        time:"December 2013 - March 2016", 
+        isUpper: true, 
+        key: uuid.v4(null)},
+      {role:"Instructor", 
+        company:"ITMC | IT Training Center", 
+        description:"Working with 8-20 people groups from teenagers to seniors. Teaching Photoshop techniques, basic understandig of the web, web design and internet marketing.",
+        technologies: "",
+        software: "",
+        time:"Occasionally", 
+        isUpper: true, 
+        key: uuid.v4(null)},
+      {role:"Graphic Designer", 
+        company:"Vilnius University | Kaunas Faculty", 
+        description:"A lot of multi-tasking assignments, learned a lot about collaborating, working in team, event management, graphic design and e-marketing.",
+        technologies: "Software used: - Adobe Photoshop, Illustrator, MS Office.",
+        software: "Skills: - Photography, event management, team management, graphic design, internet marketing.", 
+        time:"January 2012 - December 2013", 
+        isUpper: false, 
+        key: uuid.v4(null)},
+      {role:"Sales and Marketing Manager", 
+        company:'UAB "Amziaus Pasaka"', 
+        description:"Client and sponsor search. Various event management from idea to full concept. Poster and other advert design.",
+        technologies: "Software: - Adobe Photoshop, Illustrator, MS Office.",
+        software: "Skills: - Marketing, event management, graphic design.",
+        time:"June 2010 - August 2011", 
+        isUpper: false, 
+        key: uuid.v4(null)}
     ]
 
   }
@@ -110,23 +152,3 @@ class Resume extends Component {
 }
 
 export default Resume;
-
-  // padaryti OnMouseMove kad judetu Single image => Portfolio
-  // class Application extends React.Component {
-  //   constructor(props) {
-  //     super(props);
-  
-  //     this.state = { x: 0, y: 0 };
-  //   }
-  
-  //   _onMouseMove(e) {
-  //     this.setState({ x: e.screenX, y: e.screenY });
-  //   }
-  
-  //   render() {
-  //     const { x, y } = this.state;
-  //     return <div onMouseMove={this._onMouseMove.bind(this)}>
-  //       <h1>Mouse coordinates: { x } { y }</h1>
-  //     </div>;
-  //   }
-  // }

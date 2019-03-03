@@ -9,17 +9,17 @@ class Skills extends Component {
 
                 <div className={cssClasses.column}>
                 <h3 className={cssClasses.header}>Main Skill Set</h3>
+                    <h4 className={cssClasses.sub_header2}>Front-End Development</h4>
+                    <ProgressBar2 barWidth={90} maxWidth={100}/>
+
+                    <h4 className={cssClasses.sub_header2}>UI/UX Design</h4>
+                    <ProgressBar2 barWidth={85} maxWidth={100}/>
+
                     <h4 className={cssClasses.sub_header2}>Print Design</h4>
                     <ProgressBar2 barWidth={76} maxWidth={100}/>
 
-                    <h4 className={cssClasses.sub_header2}>Web Design</h4>
-                    <ProgressBar2 barWidth={89} maxWidth={100}/>
-
-                    <h4 className={cssClasses.sub_header2}>UI/UX Design</h4>
-                    <ProgressBar2 barWidth={62} maxWidth={100}/>
-
-                    <h4 className={cssClasses.sub_header2}>Front-End Development</h4>
-                    <ProgressBar2 barWidth={72} maxWidth={100}/>
+                    <h4 className={cssClasses.sub_header2}>3D Design</h4>
+                    <ProgressBar2 barWidth={60} maxWidth={100}/>
                     <br />
                 </div>
                 <hr />
@@ -29,25 +29,21 @@ class Skills extends Component {
                     <p className={cssClasses.p}>English // <b>Fluent</b></p>
                     <p className={cssClasses.p}>Russian // <b>Conversational</b></p>
                     <p className={cssClasses.p}>German // <b>Basics</b></p><br />
-
+                    
                     <h3 className={cssClasses.header}>Computer Languages</h3>
                     <p className={cssClasses.p}>HTML, CSS, JavaScript</p>
                     <h4 className={cssClasses.sub_header}>Frameworks</h4>
-                    <p className={cssClasses.p}>Bootstrap, SASS</p>
-                    <p className={cssClasses.p}>React, React Native</p>
+                    <p className={cssClasses.p}>React, Vue, Angular</p>
                     <h4 className={cssClasses.sub_header}>Other</h4>
-                    <p className={cssClasses.p}>Babbel, WebPack, GIT</p>
+                    <p className={cssClasses.p}>Babbel, WebPack, GIT, Bootstrap, SASS, jQuery, TypeScript</p>
+                    <p className={cssClasses.p}></p>
     
-                    
-    
-                    
                 </div>
                 <hr />
                 <div className={cssClasses.column}>
                 <h3 className={cssClasses.header}>Software</h3>
                     <h4 className={cssClasses.sub_header}>Design</h4>
-                    <p className={cssClasses.p}>Adobe Photoshop, Illustrator, InDesign</p>
-                    <p className={cssClasses.p}>Adobe Muse, XD</p>
+                    <p className={cssClasses.p}>Adobe Photoshop, Illustrator, InDesign, XD</p>
                     <h4 className={cssClasses.sub_header}>Code</h4>
                     <p className={cssClasses.p}>Visual Studio Code</p>
                     <h4 className={cssClasses.sub_header}>3D</h4>
