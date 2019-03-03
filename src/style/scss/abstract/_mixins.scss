@@ -1,0 +1,21 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 768px) {@content}; //600px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) and (min-width: 901px) {@content}; //1200px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 1000px) {@content}; //900px
+    }
+    @if $breakpoint == desktop {
+        @media (min-width: 1000px) {@content}; //900px
+    }
+}
+
+@mixin transform($procX, $procY) {
+    transform: translateX($procX) translateY($procY);
+    -webkit-transform: translateX($procX) translateY($procY);
+    -moz-transform: translateX($procX) translateY($procY);
+    -o-transform: translateX($procX) translateY($procY); 
+}

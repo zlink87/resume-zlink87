@@ -1,0 +1,76 @@
+.menu_wrapper {
+    position: fixed;
+    top: 90%;
+    @include transform(-50%,-50%);
+    left: 50%;
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    z-index: 999;
+    width: 670px;
+    transition: all .5s ease-out;
+
+    @include respond(tab-port) {
+        position: fixed;
+        top: 100%;
+        @include transform(-50%,-100%);
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        top: 100%;
+        left: 50%;
+        @include transform(-50%,-100%);
+        border-radius: 5px 5px 0 0;
+        width: 90%;
+        text-align: center;
+        background-color: rgba(0,0,0, 0.8);
+    }
+
+    &_button {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        margin: 20px 5px;
+        padding-bottom: 10px;
+
+        @include respond(tab-port) {
+            width: 100px;
+        }
+
+        @include respond(phone) {
+           width: 30px;
+           margin: 10px 10px;
+        }
+
+        & svg {
+            @include respond(phone) {
+                width: 28px;
+             }
+            
+        }
+        
+        &__icon path {
+            fill: #f5eeea;
+        }
+
+
+        & a:hover &__icon path,
+        & a:active &__icon path
+         {   
+            fill: #e8d18d; 
+        }
+    }
+
+    &_button:first-child {
+        padding-top: 10px;
+    }
+}
+
+.active path {
+    fill: #e8d18d;
+    
+}
+
+

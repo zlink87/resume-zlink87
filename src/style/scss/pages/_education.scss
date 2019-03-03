@@ -1,0 +1,49 @@
+.color_section {
+    @include respond(phone) {
+        padding: 1em 2em;
+        background-color: #eee;
+    }
+
+    @include respond(tab-port) {
+        padding: 1em 2em;
+        background-color: #eee;
+    }
+}
+
+.edu_card {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+.small_edu {
+    font-size: 1.2em;
+    color: #999;
+}
+
+.name_edu {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+.sub_header_edu {
+    color: rgb(85, 85, 85);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.p {
+    color: rgb(85, 85, 85);
+}
+
+@include respond(tab-land) {
+    hr {display: none;}
+}
+
+
+@include respond(desktop) {
+    hr {display: none;}
+}

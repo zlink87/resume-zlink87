@@ -1,0 +1,43 @@
+
+    .header {
+        color: #1a1916;
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    .sub_header {
+        color: #333;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .sub_header2 {
+        color: #333;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    .p {
+        color: #333;
+        line-height: 1.6em;
+        
+    }
+
+    .p:not(:last-child) {
+        padding-bottom: .4em;
+    }
+
+    .skills .p {
+        color: #595959;
+        line-height: 1em;
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+

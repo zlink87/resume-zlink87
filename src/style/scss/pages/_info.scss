@@ -1,0 +1,31 @@
+.about_me {
+    &__profile {
+        &_picture {
+            border-radius: 5px;
+            @include respond(tab-port) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+       
+    
+        &_name {
+            margin-top: 20px;
+            font-size: 32px;
+        }
+    
+        &_age {
+            color: #333;
+            font-size: 18px;
+        }
+    
+        &_from {
+            color: #a2a2a2;
+            margin-top: 20px;
+            font-size: 16px;
+        } 
+    }
+}
+
+

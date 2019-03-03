@@ -1,0 +1,43 @@
+.background_wrapper {
+    position: relative;
+    width: 100vw;
+
+    z-index: -999999;
+    overflow: hidden;
+    
+}
+
+.iniciall {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    display: block;
+    position: fixed;
+    font-size: 70em;
+    overflow: hidden;
+    top: -40vh;
+    left: -10vw;
+    color: rgba(191,191,191, 0.3);
+    animation-name: slowMotionL;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.inicialz {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    display: block;
+    position: fixed;
+    font-size: 70em;
+    overflow: hidden;
+    top: -22vh;
+    left: 4vw;
+    color: rgba(191,191,191, 0.3);
+    animation-name: slowMotionZ;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+

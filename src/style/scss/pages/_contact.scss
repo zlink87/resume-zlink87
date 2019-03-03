@@ -1,0 +1,55 @@
+.contact {
+    width: 100%;
+    text-align: center;
+
+    @include respond(tab-port) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(-50%, -100%);
+    }
+
+    &__icon_wrapper {
+        display: inline-block;
+        transition: all .4s;
+        &:not(:last-child) {
+            margin-right: 50px;
+            margin-top: 50px;
+
+            @include respond(phone) {
+                margin-right: 20px;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+        }
+    }
+
+    &__icon {
+        @include respond(phone) {
+            width: 50px;
+        }
+    }
+
+    &__icon path {
+        fill: #333;
+        transition: all .4s;
+    }
+
+    &__icon_wrapper:hover &__icon path {
+        fill: #999;
+    }
+
+    &__tooltip {
+        font-size: 24px;
+
+        @include respond(phone) {
+            font-size: 16px;
+        }
+    }
+   
+}
